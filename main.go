@@ -7,7 +7,6 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"google.golang.org/grpc"
-	"google.golang.org/protobuf/proto" 
 	pb "github.com/navdeep-singh-ghotra/kubecombe/pb" // Your Protobuf definitionS
 )
 
