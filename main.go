@@ -7,8 +7,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"google.golang.org/grpc"
-	"github.com/navdeep-singh-ghotra/kubecombe/pb"
-	//pb "github.com/navdeep-singh-ghotra/kubecombe/pb" // Your Protobuf definitionS
+	"google.golang.org/protobuf/proto" 
+	pb "github.com/navdeep-singh-ghotra/kubecombe/pb" // Your Protobuf definitionS
 )
 
 type Product struct {

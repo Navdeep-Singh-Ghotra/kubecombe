@@ -1,6 +1,5 @@
 syntax = "proto3";
-option go_package = "github.com/navdeep-singh-ghotra/kubecombe/pb";
-
+option go_package = "github.com/yourusername/navdeep-singh-ghotra/kubecombe/pb"; 
 package product;
 
 service ProductService {
