@@ -3,9 +3,9 @@ WORKDIR /app
 COPY go.mod go.sum ./
 RUN go mod download
 COPY . .
-RUN CGO_ENABLED=0 GOOS=linux go build -o /product-service
+RUN CGO_ENABLED=0 GOOS=linux go build -o /kubecombe
 
 FROM alpine:latest
-COPY --from=builder /product-service /product-service
+COPY --from=builder /kubecombe /kubecombe
 EXPOSE 8080 50051
-ENTRYPOINT ["/product-service"]
+ENTRYPOINT ["/kubecombe"]
