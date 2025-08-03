@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = ".;product";  // Or your preferred package path
 
 package product;
 
